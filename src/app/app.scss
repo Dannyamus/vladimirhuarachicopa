@@ -99,8 +99,19 @@ nav a.active {
   margin: 0.45rem 0 0;
 }
 
-.site-footer > p {
+.footer-meta {
   text-align: right;
+}
+
+.footer-dev a {
+  border-bottom: 1px solid currentColor;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-dev a:hover {
+  color: var(--accent);
 }
 
 @media (max-width: 760px) {
@@ -205,7 +216,7 @@ nav a.active {
     padding-block: 2rem;
   }
 
-  .site-footer > p {
+  .footer-meta {
     text-align: left;
   }
 }
@@ -215,3 +226,4 @@ nav a.active {
     max-width: 14rem;
   }
 }
+
