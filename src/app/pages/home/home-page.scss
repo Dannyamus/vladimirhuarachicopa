@@ -681,3 +681,38 @@ h1 {
   object-position: center;
   width: 100%;
 }
+
+/* Hero text fade sequence */
+@keyframes heroTextFade {
+  from {
+    opacity: 0;
+    transform: translateY(1.1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-copy .eyebrow,
+.hero-copy h1,
+.hero-copy .intro {
+  animation: heroTextFade 850ms ease both;
+}
+
+.hero-copy .eyebrow {
+  animation-delay: 120ms;
+}
+
+.hero-copy h1 {
+  animation-delay: 320ms;
+}
+
+.hero-copy .intro {
+  animation-delay: 620ms;
+}
+
+.hero-logo {
+  animation: heroTextFade 900ms ease 760ms both;
+}
