@@ -716,3 +716,29 @@ h1 {
 .hero-logo {
   animation: heroTextFade 900ms ease 760ms both;
 }
+
+/* Circular author photo on home */
+.author-profile {
+  grid-template-columns: minmax(360px, 0.9fr) minmax(0, 1.1fr);
+}
+
+.author-photo {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  justify-self: start;
+  max-width: min(560px, 100%);
+  width: 100%;
+}
+
+.author-photo img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;
+  width: 100%;
+}
+
+@media (max-width: 1050px) {
+  .author-photo {
+    max-width: 520px;
+  }
+}
