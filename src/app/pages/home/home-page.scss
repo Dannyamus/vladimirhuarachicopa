@@ -665,3 +665,19 @@ h1 {
 .featured a:hover {
   text-underline-offset: 0.38em;
 }
+
+/* Circular hero logo */
+.hero-logo {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  max-width: min(520px, 100%);
+  overflow: hidden;
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.hero-logo img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
