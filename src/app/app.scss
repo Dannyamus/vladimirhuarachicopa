@@ -5,32 +5,27 @@
 
 .site-header {
   align-items: center;
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--line);
   display: flex;
+  gap: 1.25rem;
   justify-content: space-between;
-  padding: 1rem max(1.25rem, calc((100vw - 1180px) / 2));
+  padding: 1rem clamp(1.1rem, 4vw, 5rem);
   position: sticky;
   top: 0;
   z-index: 10;
-  backdrop-filter: blur(16px);
 }
 
 .brand {
-  align-items: center;
   color: var(--ink);
   display: flex;
-  gap: 0.8rem;
+  min-width: 0;
   text-decoration: none;
 }
 
-.brand-logo {
-  border: 1px solid var(--line);
-  border-radius: 0.2rem;
-  height: 3.2rem;
-  object-fit: cover;
-  object-position: center;
-  width: 3.8rem;
+.brand span {
+  min-width: 0;
 }
 
 .brand strong,
@@ -39,119 +34,135 @@
 }
 
 .brand strong {
-  font-size: 0.96rem;
+  font-size: clamp(1.2rem, 1.45vw, 1.65rem);
+  line-height: 1.05;
 }
 
 .brand small {
   color: var(--muted);
   font-family: var(--font-sans);
-  font-size: 0.66rem;
+  font-size: clamp(0.72rem, 0.85vw, 0.95rem);
   letter-spacing: 0.1em;
-  margin-top: 0.15rem;
+  line-height: 1.35;
+  margin-top: 0.2rem;
   text-transform: uppercase;
 }
 
 nav {
+  align-items: center;
   display: flex;
-  gap: 2rem;
+  flex: 0 0 auto;
+  gap: clamp(0.9rem, 2vw, 2rem);
 }
 
 nav a {
+  border-bottom: 2px solid transparent;
   color: var(--ink);
   font-family: var(--font-sans);
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: clamp(0.95rem, 1.05vw, 1.15rem);
+  font-weight: 700;
+  padding-bottom: 0.35rem;
   text-decoration: none;
+  white-space: nowrap;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
+  border-bottom-color: var(--ink);
   color: var(--accent);
 }
 
 .site-footer {
-  align-items: end;
+  align-items: flex-end;
   border-top: 1px solid var(--line);
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 3rem 0;
+  margin: 0 clamp(1.1rem, 4vw, 5rem);
+  padding: clamp(2rem, 4vw, 3rem) 0;
 }
 
 .site-footer strong {
   color: var(--ink);
+  font-size: 1.2rem;
 }
 
 .site-footer p {
   color: var(--muted);
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
   margin: 0.45rem 0 0;
 }
 
-@media (max-width: 720px) {
+.site-footer > p {
+  text-align: right;
+}
+
+@media (max-width: 760px) {
   .site-header {
     align-items: flex-start;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 0.95rem 1rem;
+  }
+
+  .brand strong {
+    font-size: clamp(1.1rem, 6vw, 1.45rem);
+  }
+
+  .brand small {
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
   }
 
   nav {
-    gap: 0.9rem;
-    padding-top: 0.65rem;
+    border-top: 1px solid var(--line);
+    gap: 0.75rem;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+    width: 100%;
   }
 
-  nav a:last-child {
-    display: none;
+  nav a {
+    background: color-mix(in srgb, var(--surface) 70%, transparent);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    flex: 1 1 0;
+    font-size: 0.9rem;
+    padding: 0.65rem 0.75rem;
+    text-align: center;
+  }
+
+  nav a.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
   }
 
   .site-footer {
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 1.5rem;
-    margin-inline: 1.25rem;
+    gap: 1.1rem;
+    margin-inline: 1rem;
+    padding-block: 2rem;
+  }
+
+  .site-footer > p {
+    text-align: left;
   }
 }
 
+@media (max-width: 420px) {
+  .brand small {
+    max-width: 19rem;
+  }
 
+  nav {
+    flex-direction: column;
+  }
 
-/* Full-width editorial layout */
-.site-header {
-  padding-inline: clamp(1.5rem, 4vw, 5rem);
+  nav a {
+    width: 100%;
+  }
 }
-
-.brand {
-  gap: 0;
-}
-
-.brand strong {
-  font-size: clamp(1.15rem, 1.4vw, 1.5rem);
-}
-
-.brand small {
-  font-size: clamp(0.68rem, 0.75vw, 0.82rem);
-}
-
-nav a {
-  font-size: clamp(0.9rem, 1vw, 1.05rem);
-}
-
-.site-footer {
-  max-width: none;
-  margin-inline: clamp(1.5rem, 4vw, 5rem);
-}
-
-/* Larger, high-contrast reading controls */
-.brand strong { font-size: clamp(1.3rem, 1.45vw, 1.65rem); }
-.brand small {
-  color: var(--muted);
-  font-size: clamp(0.78rem, 0.85vw, 0.95rem);
-}
-nav a { font-size: clamp(1rem, 1.05vw, 1.15rem); }
-.site-footer strong { font-size: 1.2rem; }
-.site-footer p {
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.65;
-}
-
-nav a.active { border-bottom: 2px solid var(--ink); padding-bottom: 0.35rem; }
