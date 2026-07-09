@@ -1,0 +1,104 @@
+﻿:host { display: block; }
+
+.page-heading {
+  border-bottom: 1px solid var(--line);
+  padding: clamp(4rem, 8vw, 9rem) clamp(1.5rem, 5vw, 6rem) clamp(3rem, 5vw, 5rem);
+}
+
+.page-heading > p,
+.meta {
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(5rem, 12vw, 11rem);
+  font-weight: 400;
+  letter-spacing: -0.065em;
+  line-height: 0.85;
+  margin: 1.5rem 0 3rem;
+}
+
+.page-heading > div {
+  align-items: end;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.page-heading > div p {
+  color: var(--muted);
+  font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+  line-height: 1.75;
+  margin: 0;
+  max-width: 850px;
+}
+
+.page-heading > div span,
+.article-action {
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.article-list {
+  padding-inline: clamp(1.5rem, 5vw, 6rem);
+}
+
+.article-row {
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 5rem);
+  grid-template-columns: 4rem minmax(0, 1fr) 10rem;
+  padding: clamp(2.5rem, 5vw, 5rem) 0;
+  text-decoration: none;
+  transition: background 180ms ease, padding 180ms ease;
+}
+
+.article-row:hover {
+  background: var(--surface);
+  padding-inline: 1.5rem;
+}
+
+.number {
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+}
+
+.article-copy h2 {
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  margin: 1rem 0 1.5rem;
+}
+
+.excerpt {
+  color: var(--muted);
+  font-size: clamp(1.15rem, 1.45vw, 1.45rem);
+  line-height: 1.8;
+  margin: 0;
+  max-width: 900px;
+}
+
+.article-action {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: right;
+}
+
+.article-action strong { color: var(--ink); }
+
+@media (max-width: 760px) {
+  .page-heading > div { align-items: start; flex-direction: column; }
+  .article-row { grid-template-columns: 2.5rem 1fr; }
+  .article-action { grid-column: 2; text-align: left; }
+}

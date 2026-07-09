@@ -1,0 +1,33 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Libre+Caslon+Display&display=swap');
+
+:root {
+  color-scheme: light;
+  --paper: #c9cbcc;
+  --surface: #e1e2e2;
+  --surface-2: #b8bbbc;
+  --ink: #111211;
+  --muted: #3e4142;
+  --accent: #202220;
+  --silver-bright: #000000;
+  --line: #a5a8a9;
+  --font-serif: 'Libre Caslon Display', Georgia, serif;
+  --font-sans: 'DM Sans', Arial, sans-serif;
+  font-size: clamp(18px, 1.05vw, 20px);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(255, 255, 255, 0.38), transparent 32rem),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  line-height: 1.65;
+  margin: 0;
+  min-width: 320px;
+}
+button, input, textarea { font: inherit; }
+a { text-underline-offset: 0.2em; }
+::selection { background: #171817; color: #ffffff; }
+

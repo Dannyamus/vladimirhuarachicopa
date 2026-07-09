@@ -1,0 +1,99 @@
+﻿:host { display: block; }
+
+.about-hero {
+  align-items: center;
+  display: grid;
+  gap: clamp(3rem, 8vw, 10rem);
+  grid-template-columns: minmax(0, 1.3fr) minmax(360px, 0.7fr);
+  min-height: calc(100vh - 5rem);
+  padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem);
+}
+
+.eyebrow,
+.section-label {
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(4.5rem, 10vw, 10rem);
+  font-weight: 400;
+  letter-spacing: -0.065em;
+  line-height: 0.84;
+  margin: 1.5rem 0 2rem;
+}
+
+.profession {
+  color: var(--muted);
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+}
+
+figure {
+  background: #000;
+  border: 1px solid var(--line);
+  margin: 0;
+  width: 100%;
+}
+
+figure img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.biography {
+  background: var(--surface);
+  border-block: 1px solid var(--line);
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 2fr;
+  padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem);
+}
+
+.biography > div { max-width: 900px; }
+
+.biography p {
+  color: var(--muted);
+  font-size: clamp(1.2rem, 1.55vw, 1.6rem);
+  line-height: 1.9;
+}
+
+.biography .lead {
+  color: var(--ink);
+  font-size: clamp(1.7rem, 2.5vw, 2.7rem);
+  line-height: 1.55;
+}
+
+.placeholder {
+  border-left: 3px solid var(--ink);
+  padding-left: 1.5rem;
+}
+
+.biography a {
+  color: var(--ink);
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .about-hero,
+  .biography { grid-template-columns: 1fr; }
+  .about-hero figure { max-width: 680px; }
+}
+
+.about-hero figure {
+  overflow: hidden;
+}
+
+.about-hero figure img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,24 @@
+﻿@if (article; as currentArticle) {
+  <article class="article">
+    <a class="back" routerLink="/articulos">← Volver a los artículos</a>
+    <header>
+      <p>{{ currentArticle.category }} · {{ currentArticle.date }}</p>
+      <h1>{{ currentArticle.title }}</h1>
+      <div class="summary">
+        <p>{{ currentArticle.excerpt }}</p>
+        <span>{{ currentArticle.readingTime }}</span>
+      </div>
+    </header>
+
+    <div class="article-body">
+      @for (paragraph of currentArticle.content; track paragraph) {
+        <p>{{ paragraph }}</p>
+      }
+    </div>
+  </article>
+} @else {
+  <section class="not-found">
+    <p>El artículo que buscas no está disponible.</p>
+    <a routerLink="/">Volver al inicio</a>
+  </section>
+}

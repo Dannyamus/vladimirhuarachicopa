@@ -1,0 +1,77 @@
+﻿<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Reflexi&oacute;n &middot; Sociedad &middot; Cultura</p>
+    <h1>Ideas para comprender nuestro tiempo.</h1>
+    <p class="intro">
+      Un archivo personal de art&iacute;culos sobre historia, educaci&oacute;n, cultura y vida p&uacute;blica,
+      escrito por Vladimir Huarachi Copa.
+    </p>
+  </div>
+  <figure class="hero-logo">
+    <img src="images/vladimir-logo.png" alt="Logotipo de Vladimir Huarachi Copa, polit&oacute;logo" />
+  </figure>
+</section>
+
+<section class="author" id="autor" aria-labelledby="author-title">
+  <p class="eyebrow">Sobre el autor</p>
+  <div class="author-profile">
+    <figure class="author-photo">
+      <img src="images/vladimir-huarachi-copa.png" alt="Retrato de Vladimir Huarachi Copa" />
+    </figure>
+    <div class="author-copy">
+      <h2 id="author-title">Vladimir Huarachi Copa</h2>
+      <p>
+        Vladimir Huarachi Copa es un polit&oacute;logo boliviano, con Maestr&iacute;a en
+        An&aacute;lisis Regional y Doctorado en Ciencias Sociales. Cuenta con experiencia
+        en gesti&oacute;n legislativa, an&aacute;lisis pol&iacute;tico, formulaci&oacute;n y
+        evaluaci&oacute;n de pol&iacute;ticas p&uacute;blicas, as&iacute; como en relaciones
+        internacionales.
+      </p>
+      <p>
+        Ha desarrollado una destacada producci&oacute;n acad&eacute;mica y de opini&oacute;n,
+        con publicaciones en medios nacionales e internacionales.
+      </p>
+      <a routerLink="/sobre-el-autor">Conocer su trayectoria &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="reading-invitation" aria-labelledby="invitation-title">
+  <div>
+    <p class="eyebrow">Una invitaci&oacute;n a leer</p>
+    <h2 id="invitation-title">Ideas para pensar el presente desde Bolivia.</h2>
+  </div>
+  <div class="invitation-copy">
+    <p>
+      Este espacio re&uacute;ne art&iacute;culos de an&aacute;lisis, opini&oacute;n y reflexi&oacute;n
+      sobre sociedad, pol&iacute;tica, cultura, educaci&oacute;n y relaciones internacionales.
+    </p>
+    <p>
+      Cada texto propone una mirada informada sobre los asuntos que atraviesan nuestra vida
+      p&uacute;blica y nuestro tiempo.
+    </p>
+    <a routerLink="/articulos">Leer todos los art&iacute;culos &rarr;</a>
+  </div>
+</section>
+
+<section class="articles" id="articulos" aria-labelledby="articles-title">
+  <header class="section-header">
+    <p class="eyebrow">Publicaciones</p>
+    <h2 id="articles-title">Art&iacute;culos recientes</h2>
+  </header>
+  <div class="article-grid">
+    @for (article of articles; track article.slug; let index = $index) {
+      <article class="article-card">
+        <a class="card-link" [routerLink]="['/articulos', article.slug]">
+          <span class="article-number">0{{ index + 1 }}</span>
+          <p class="article-meta">{{ article.category }} &middot; {{ article.readingTime }}</p>
+          <h3>{{ article.title }}</h3>
+          <p>{{ article.excerpt }}</p>
+          <span class="open-article">Abrir art&iacute;culo <span aria-hidden="true">&nearr;</span></span>
+          <time>{{ article.date }}</time>
+        </a>
+      </article>
+    }
+  </div>
+</section>
+

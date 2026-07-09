@@ -1,0 +1,28 @@
+﻿<section class="page-heading">
+  <p>Archivo de publicaciones</p>
+  <h1>Art&iacute;culos</h1>
+  <div>
+    <p>
+      Reflexiones sobre sociedad, cultura, educaci&oacute;n, historia y vida p&uacute;blica.
+      Selecciona una publicaci&oacute;n para abrir su p&aacute;gina completa.
+    </p>
+    <span>{{ articles.length }} publicaciones</span>
+  </div>
+</section>
+
+<section class="article-list" aria-label="Todos los artículos">
+  @for (article of articles; track article.slug; let index = $index) {
+    <a class="article-row" [routerLink]="['/articulos', article.slug]">
+      <span class="number">0{{ index + 1 }}</span>
+      <div class="article-copy">
+        <p class="meta">{{ article.category }} &middot; {{ article.date }}</p>
+        <h2>{{ article.title }}</h2>
+        <p class="excerpt">{{ article.excerpt }}</p>
+      </div>
+      <div class="article-action">
+        <span>{{ article.readingTime }}</span>
+        <strong>Abrir &rarr;</strong>
+      </div>
+    </a>
+  }
+</section>
