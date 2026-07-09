@@ -48,6 +48,10 @@
   text-transform: uppercase;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 nav {
   align-items: center;
   display: flex;
@@ -101,39 +105,92 @@ nav a.active {
 
 @media (max-width: 760px) {
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.85rem;
-    padding: 0.95rem 1rem;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .brand {
+    flex: 1 1 auto;
   }
 
   .brand strong {
-    font-size: clamp(1.1rem, 6vw, 1.45rem);
+    font-size: clamp(1rem, 5vw, 1.35rem);
   }
 
   .brand small {
-    font-size: 0.72rem;
-    letter-spacing: 0.07em;
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+  }
+
+  .menu-toggle {
+    align-items: center;
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 0.28rem;
+    height: 2.7rem;
+    justify-content: center;
+    padding: 0;
+    width: 2.7rem;
+  }
+
+  .menu-toggle span {
+    background: var(--paper);
+    border-radius: 999px;
+    display: block;
+    height: 2px;
+    transition: transform 180ms ease, opacity 180ms ease;
+    width: 1.15rem;
+  }
+
+  .menu-toggle[aria-expanded='true'] span:first-child {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded='true'] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle[aria-expanded='true'] span:last-child {
+    transform: translateY(-6px) rotate(-45deg);
   }
 
   nav {
-    border-top: 1px solid var(--line);
-    gap: 0.75rem;
-    justify-content: space-between;
-    padding-top: 0.75rem;
-    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.12);
+    display: grid;
+    gap: 0.45rem;
+    left: 1rem;
+    opacity: 0;
+    padding: 0.65rem;
+    pointer-events: none;
+    position: absolute;
+    right: 1rem;
+    top: calc(100% + 0.45rem);
+    transform: translateY(-0.4rem);
+    transition: opacity 180ms ease, transform 180ms ease;
+    width: auto;
+  }
+
+  nav.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   nav a {
-    background: color-mix(in srgb, var(--surface) 70%, transparent);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    flex: 1 1 0;
-    font-size: 0.9rem;
-    padding: 0.65rem 0.75rem;
-    text-align: center;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+    text-align: left;
   }
 
+  nav a:hover,
   nav a.active {
     background: var(--ink);
     border-color: var(--ink);
@@ -155,14 +212,6 @@ nav a.active {
 
 @media (max-width: 420px) {
   .brand small {
-    max-width: 19rem;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
-    width: 100%;
+    max-width: 14rem;
   }
 }

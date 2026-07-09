@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,5 +7,14 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {}
+export class App {
+  protected readonly menuOpen = signal(false);
 
+  protected toggleMenu(): void {
+    this.menuOpen.update((isOpen) => !isOpen);
+  }
+
+  protected closeMenu(): void {
+    this.menuOpen.set(false);
+  }
+}
