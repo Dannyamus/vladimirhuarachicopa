@@ -742,3 +742,34 @@ h1 {
     max-width: 520px;
   }
 }
+
+/* Balanced author block layout */
+.author {
+  align-items: start;
+  column-gap: clamp(2rem, 5vw, 6rem);
+  grid-template-columns: 1fr;
+}
+
+.author > .eyebrow {
+  margin: 0;
+}
+
+.author-profile {
+  grid-template-columns: minmax(360px, 0.9fr) minmax(0, 1.1fr);
+  width: 100%;
+}
+
+.author-photo {
+  justify-self: start;
+  max-width: min(620px, 100%);
+}
+
+@media (max-width: 1050px) {
+  .author-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .author-photo {
+    max-width: 540px;
+  }
+}
