@@ -102,3 +102,48 @@ h1 {
   .article-row { grid-template-columns: 2.5rem 1fr; }
   .article-action { grid-column: 2; text-align: left; }
 }
+
+/* Article archive motion */
+.page-heading,
+.article-list {
+  animation: fadeLift 650ms ease both;
+}
+
+.article-list { animation-delay: 120ms; }
+
+.article-row {
+  border-radius: 0.35rem;
+  position: relative;
+  transition: background 220ms ease, box-shadow 220ms ease, padding 220ms ease, transform 220ms ease;
+}
+
+.article-row::before {
+  background: var(--ink);
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: height 220ms ease;
+  width: 3px;
+}
+
+.article-row:hover {
+  background: color-mix(in srgb, var(--surface) 82%, white);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-0.25rem);
+}
+
+.article-row:hover::before {
+  height: calc(100% - 2rem);
+}
+
+.article-action strong {
+  transition: transform 180ms ease;
+}
+
+.article-row:hover .article-action strong {
+  transform: translateX(0.25rem);
+}
+

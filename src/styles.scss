@@ -10,6 +10,9 @@
   --accent: #202220;
   --silver-bright: #000000;
   --line: #a5a8a9;
+  --shadow-soft: 0 1.2rem 3rem rgba(17, 18, 17, 0.12);
+  --shadow-strong: 0 2rem 5rem rgba(17, 18, 17, 0.2);
+  --highlight: rgba(255, 255, 255, 0.55);
   --font-serif: 'Libre Caslon Display', Georgia, serif;
   --font-sans: 'DM Sans', Arial, sans-serif;
   font-size: clamp(18px, 1.05vw, 20px);
@@ -19,7 +22,9 @@
 html { scroll-behavior: smooth; }
 body {
   background:
-    radial-gradient(circle at 82% 8%, rgba(255, 255, 255, 0.38), transparent 32rem),
+    radial-gradient(circle at 82% 8%, rgba(255, 255, 255, 0.42), transparent 32rem),
+    radial-gradient(circle at 8% 28%, rgba(255, 255, 255, 0.28), transparent 24rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.28), transparent 38%),
     var(--paper);
   color: var(--ink);
   font-family: var(--font-serif);
@@ -31,3 +36,31 @@ button, input, textarea { font: inherit; }
 a { text-underline-offset: 0.2em; }
 ::selection { background: #171817; color: #ffffff; }
 
+
+@keyframes fadeLift {
+  from {
+    opacity: 0;
+    transform: translateY(1.4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes softFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-0.6rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
