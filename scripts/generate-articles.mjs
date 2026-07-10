@@ -22,10 +22,7 @@ function parseFrontMatter(source, fileName) {
     const key = line.slice(0, separator).trim();
     let value = line.slice(separator + 1).trim();
 
-    if (
-      (value.startsWith('"') && value.endsWith('"')) ||
-      (value.startsWith("'") && value.endsWith("'"))
-    ) {
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
       value = value.slice(1, -1);
     }
 
@@ -65,10 +62,7 @@ for (const article of articles) {
   }
 }
 
-const generated = `import { Article } from '../models/article';\n\nexport const ARTICLES: Article[] = ${JSON.stringify(articles, null, 2)};\n`;
+const generated = `// Archivo generado automáticamente desde src/content/articles/*.md. No editar manualmente.\nimport { Article } from '../models/article';\n\nexport const ARTICLES: Article[] = ${JSON.stringify(articles, null, 2)};\n`;
 
 writeFileSync(outputFile, generated, 'utf8');
 console.log(`Generados ${articles.length} artículos en ${outputFile}`);
-
-
-
