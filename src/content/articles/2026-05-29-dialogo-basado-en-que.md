@@ -8,9 +8,7 @@ readingTime: "5 min de lectura"
 featured: true
 ---
 
-Por Vladimir Huarachi Copa
-
-LA PAZ, 29 may (El Libre Observador) — Si el objetivo declarado del presidente Rodrigo Paz es el diálogo como medio para solucionar los conflictos que ya superan los veinte días, entonces cabe una pregunta fundamental: ¿sobre qué bases se pretende construir ese diálogo?
+Si el objetivo declarado del presidente Rodrigo Paz es el diálogo como medio para solucionar los conflictos que ya superan los veinte días, entonces cabe una pregunta fundamental: ¿sobre qué bases se pretende construir ese diálogo?
 
 Las bases esenciales de todo diálogo son el respeto y la confianza. Sin embargo, ambas parecen haberse erosionado. El presidente Paz ha perdido el respeto de los sectores movilizados al calificarlos de vándalos, al desatender sus demandas iniciales, en particular las relacionadas con los combustibles, y al desconocerlos como interlocutores válidos. Resulta paradójico que hoy se margine a quienes ayer lo llevaron al poder, a aquellos con quienes compartía espacios, celebraciones y cercanía en las fiestas del occidente boliviano.
 
@@ -29,3 +27,5 @@ Por otro lado, la actitud del presidente genera ambigüedad: mientras convoca al
 Finalmente, cabe preguntarse: ¿a qué responde esta persistencia en una narrativa de firmeza autoritaria? En el marco de iniciativas de seguridad y cooperación continental, podría interpretarse como un intento de coordinar esfuerzos para neutralizar a los sectores señalados como “vándalos”, incluso contemplando escenarios en los que la Policía y las Fuerzas Armadas se vean sobrepasadas o así lo sugieran los asesores más cercanos al presidente.
 
 En definitiva, el llamado al diálogo pierde sustento si no se reconstruyen previamente sus bases. Sin respeto ni confianza, el diálogo no es más que una consigna vacía.
+
+Por Vladimir Huarachi Copa
