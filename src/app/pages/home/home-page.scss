@@ -773,3 +773,88 @@ h1 {
     max-width: 540px;
   }
 }
+
+/* Safe compact home scale */
+.hero {
+  gap: clamp(2rem, 5vw, 6rem);
+  min-height: auto;
+  padding-top: clamp(3.5rem, 6vh, 5.5rem);
+  padding-bottom: clamp(3rem, 5vw, 5rem);
+}
+
+.hero h1,
+h1 {
+  font-size: clamp(4rem, 7.2vw, 7.2rem);
+  max-width: 900px;
+}
+
+.intro {
+  font-size: clamp(1.15rem, 1.45vw, 1.45rem);
+  line-height: 1.6;
+  max-width: 760px;
+}
+
+.hero-logo {
+  max-width: min(430px, 100%);
+}
+
+.author {
+  padding-top: clamp(4rem, 6vw, 5.8rem);
+  padding-bottom: clamp(4.5rem, 7vw, 6.5rem);
+}
+
+.author h2,
+.section-header h2 {
+  font-size: clamp(3rem, 5.2vw, 5.4rem);
+}
+
+.author-photo {
+  max-width: min(450px, 100%);
+}
+
+.author-copy p,
+.invitation-copy p {
+  font-size: clamp(1.08rem, 1.3vw, 1.35rem);
+  line-height: 1.7;
+}
+
+.reading-invitation {
+  gap: clamp(2.5rem, 6vw, 7rem);
+  padding-top: clamp(4rem, 7vw, 6.5rem);
+  padding-bottom: clamp(4rem, 7vw, 6.5rem);
+}
+
+.reading-invitation h2 {
+  font-size: clamp(3.2rem, 6vw, 6.2rem);
+  max-width: 880px;
+}
+
+.articles {
+  padding-top: clamp(4.5rem, 7vw, 6.5rem);
+  padding-bottom: clamp(4.5rem, 7vw, 6.5rem);
+}
+
+.card-link {
+  min-height: 25rem;
+  padding: clamp(1.6rem, 2.4vw, 2.8rem);
+}
+
+.article-number {
+  margin-bottom: 2.6rem;
+}
+
+.article-card h3 {
+  font-size: clamp(2rem, 2.8vw, 3.2rem);
+}
+
+.article-card .card-link > p:not(.article-meta) {
+  font-size: clamp(1rem, 1.12vw, 1.18rem);
+  line-height: 1.65;
+}
+
+@media (max-width: 1050px) {
+  .hero-logo,
+  .author-photo {
+    max-width: 430px;
+  }
+}
