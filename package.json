@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run generate:articles && ng serve",
+    "build": "npm run generate:articles && ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate:articles": "node scripts/generate-articles.mjs"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
