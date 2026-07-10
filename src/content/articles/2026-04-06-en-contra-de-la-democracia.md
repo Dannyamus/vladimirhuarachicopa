@@ -5,10 +5,10 @@ date: "6 de abril de 2026"
 category: "Opinión"
 excerpt: "Un análisis sobre la erosión institucional, los riesgos para la democracia boliviana y las tensiones que amenazan su continuidad efectiva."
 readingTime: "5 min de lectura"
-featured: false
+featured: true
 ---
 
-LA PAZ, 6 abr — Es sabido que la democracia boliviana se ha venido corroyendo durante los últimos años; sin embargo, hoy parece encaminarse a su colapso como consecuencia de la permanente intromisión a la que están sometidas las instituciones que la sostienen. En contraposición a este escenario calamitoso, en la nueva legislatura en la que se ha embarcado el país, el senador Nilton Condori ha salido a explicar aquello que ya se sabía sobre la hermenéutica de trabajo de senadores y diputados: un desempeño mediocre que no justifica los salarios que perciben.
+Es sabido que la democracia boliviana se ha venido corroyendo durante los últimos años; sin embargo, hoy parece encaminarse a su colapso como consecuencia de la permanente intromisión a la que están sometidas las instituciones que la sostienen. En contraposición a este escenario calamitoso, en la nueva legislatura en la que se ha embarcado el país, el senador Nilton Condori ha salido a explicar aquello que ya se sabía sobre la hermenéutica de trabajo de senadores y diputados: un desempeño mediocre que no justifica los salarios que perciben.
 
 Precisamente en torno a ese salario es que el senador Condori ha iniciado una gira nacional con el fin de reunirse con organizaciones sociales, impulsar un cabildo nacional y, posteriormente, un referéndum que refrende la reducción de sueldos de senadores y diputados, quienes actualmente perciben Bs. 23.000, además de otros beneficios. La justificación de esta ruta radica en que los propios legisladores no reducirían sus ingresos mediante una ley, abriendo paso a una medida de corte populista en la que el “pueblo” se impondría sobre sus representantes en ambas cámaras de la Asamblea Legislativa.
 
