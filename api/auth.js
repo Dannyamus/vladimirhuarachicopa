@@ -1,24 +1,7 @@
 const { randomUUID } = require('node:crypto');
 
 const GITHUB_AUTHORIZE_URL = 'https://github.com/login/oauth/authorize';
-
-function getOrigin() {
-  return 'https://www.vladimirhuarachicopa.com';
-}
-
-function html(body) {
-  return `<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Conectando con GitHub</title>
-  </head>
-  <body>
-    ${body}
-  </body>
-</html>`;
-}
+const ORIGIN = 'https://www.vladimirhuarachicopa.com';
 
 module.exports = function handler(req, res) {
   const { provider = 'github', scope = 'repo' } = req.query;
@@ -37,9 +20,8 @@ module.exports = function handler(req, res) {
     return;
   }
 
-  const origin = getOrigin();
   const state = randomUUID();
-  const callbackUrl = `${origin}/api/auth/callback`;
+  const callbackUrl = `${ORIGIN}/api/auth/callback`;
   const githubUrl = new URL(GITHUB_AUTHORIZE_URL);
 
   githubUrl.searchParams.set('client_id', clientId);
@@ -49,39 +31,8 @@ module.exports = function handler(req, res) {
 
   res.setHeader('Set-Cookie', [
     `decap_oauth_state=${encodeURIComponent(state)}; Path=/api/auth; HttpOnly; Secure; SameSite=Lax; Max-Age=600`,
-    `decap_oauth_origin=${encodeURIComponent(origin)}; Path=/api/auth; HttpOnly; Secure; SameSite=Lax; Max-Age=600`,
+    `decap_oauth_origin=${encodeURIComponent(ORIGIN)}; Path=/api/auth; HttpOnly; Secure; SameSite=Lax; Max-Age=600`,
   ]);
-  res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.status(200).send(
-    html(`<p>Conectando con GitHub...</p>
-<script>
-  const provider = 'github';
-  const authorizeUrl = ${JSON.stringify(githubUrl.href)};
-
-  function continueToGitHub() {
-    window.location.href = authorizeUrl;
-  }
-
-  window.addEventListener('message', function(event) {
-    if (event.origin === window.location.origin && event.data === 'authorizing:' + provider) {
-      continueToGitHub();
-    }
-  });
-
-  let redirected = false;
-
-  function safeContinueToGitHub() {
-    if (redirected) return;
-    redirected = true;
-    continueToGitHub();
-  }
-
-  if (window.opener) {
-    window.opener.postMessage('authorizing:' + provider, '*');
-    window.setTimeout(safeContinueToGitHub, 800);
-  } else {
-    safeContinueToGitHub();
-  }
-</script>`),
-  );
+  res.writeHead(302, { Location: githubUrl.href });
+  res.end();
 };

@@ -1,4 +1,5 @@
 const GITHUB_TOKEN_URL = 'https://github.com/login/oauth/access_token';
+const DEFAULT_ORIGIN = 'https://www.vladimirhuarachicopa.com';
 
 function parseCookies(cookieHeader = '') {
   return Object.fromEntries(
@@ -15,27 +16,6 @@ function parseCookies(cookieHeader = '') {
   );
 }
 
-function messageHtml(origin, provider, status, payload) {
-  return `<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Autenticacion GitHub</title>
-  </head>
-  <body>
-    <p>Finalizando conexion con GitHub...</p>
-    <script>
-      const message = 'authorization:${provider}:${status}:' + ${JSON.stringify(JSON.stringify(payload))};
-      if (window.opener) {
-        window.opener.postMessage(message, ${JSON.stringify(origin)});
-      }
-      window.close();
-    </script>
-  </body>
-</html>`;
-}
-
 function clearCookies() {
   return [
     'decap_oauth_state=; Path=/api/auth; HttpOnly; Secure; SameSite=Lax; Max-Age=0',
@@ -43,27 +23,33 @@ function clearCookies() {
   ];
 }
 
+function redirectToCms(res, origin, status, payload) {
+  const hash = new URLSearchParams({
+    origin,
+    provider: 'github',
+    status,
+    payload: JSON.stringify(payload),
+  }).toString();
+
+  res.writeHead(302, { Location: `${origin}/admin/oauth-callback.html#${hash}` });
+  res.end();
+}
+
 module.exports = async function handler(req, res) {
-  const provider = 'github';
   const cookies = parseCookies(req.headers.cookie);
-  const origin = cookies.decap_oauth_origin || `https://${req.headers.host}`;
+  const origin = cookies.decap_oauth_origin || DEFAULT_ORIGIN;
   const expectedState = cookies.decap_oauth_state;
   const { code, state, error, error_description: errorDescription } = req.query;
 
   res.setHeader('Set-Cookie', clearCookies());
-  res.setHeader('Content-Type', 'text/html; charset=utf-8');
 
   if (error) {
-    res
-      .status(200)
-      .send(messageHtml(origin, provider, 'error', { message: errorDescription || error }));
+    redirectToCms(res, origin, 'error', { message: errorDescription || error });
     return;
   }
 
   if (!code || !state || state !== expectedState) {
-    res
-      .status(200)
-      .send(messageHtml(origin, provider, 'error', { message: 'Estado OAuth invalido.' }));
+    redirectToCms(res, origin, 'error', { message: 'Estado OAuth invalido.' });
     return;
   }
 
@@ -71,11 +57,9 @@ module.exports = async function handler(req, res) {
   const clientSecret = process.env.GITHUB_OAUTH_CLIENT_SECRET;
 
   if (!clientId || !clientSecret) {
-    res.status(200).send(
-      messageHtml(origin, provider, 'error', {
-        message: 'Faltan GITHUB_OAUTH_CLIENT_ID o GITHUB_OAUTH_CLIENT_SECRET en Vercel.',
-      }),
-    );
+    redirectToCms(res, origin, 'error', {
+      message: 'Faltan GITHUB_OAUTH_CLIENT_ID o GITHUB_OAUTH_CLIENT_SECRET en Vercel.',
+    });
     return;
   }
 
@@ -95,18 +79,14 @@ module.exports = async function handler(req, res) {
   const tokenData = await tokenResponse.json();
 
   if (!tokenResponse.ok || tokenData.error || !tokenData.access_token) {
-    res.status(200).send(
-      messageHtml(origin, provider, 'error', {
-        message: tokenData.error_description || tokenData.error || 'No se pudo obtener el token.',
-      }),
-    );
+    redirectToCms(res, origin, 'error', {
+      message: tokenData.error_description || tokenData.error || 'No se pudo obtener el token.',
+    });
     return;
   }
 
-  res.status(200).send(
-    messageHtml(origin, provider, 'success', {
-      token: tokenData.access_token,
-      provider,
-    }),
-  );
+  redirectToCms(res, origin, 'success', {
+    token: tokenData.access_token,
+    provider: 'github',
+  });
 };
