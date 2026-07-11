@@ -4,7 +4,8 @@ slug: en-contra-de-la-democracia
 date: 6 de abril de 2026
 category: Opinión
 excerpt: Un análisis sobre la erosión institucional, los riesgos para la
-  democracia boliviana y las tensiones que amenazan su continuidad efectivaaaa.
+  democracia boliviana y las tensiones que amenazan su continuidad
+  efectivaaaaaa.
 readingTime: 5 min de lectura
 ---
 
