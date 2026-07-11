@@ -43,7 +43,7 @@ export const ARTICLES: Article[] = [
   {
     "slug": "en-contra-de-la-democracia",
     "title": "En contra de la democracia",
-    "excerpt": "Un análisis sobre la erosión institucional, los riesgos para la democracia boliviana y las tensiones que amenazan su continuidad efectivaaaa.",
+    "excerpt": "Un análisis sobre la erosión institucional, los riesgos para la democracia boliviana y las tensiones que amenazan su continuidad efectivaaaaaa.",
     "category": "Opinión",
     "date": "6 de abril de 2026",
     "readingTime": "5 min de lectura",

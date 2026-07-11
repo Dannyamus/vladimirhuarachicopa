@@ -9,7 +9,6 @@ window.CMS.init({
     },
     media_folder: 'public/images/uploads',
     public_folder: '/images/uploads',
-    publish_mode: 'editorial_workflow',
     locale: 'es',
     collections: [
       {
