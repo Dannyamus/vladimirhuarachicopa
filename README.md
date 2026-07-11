@@ -1,59 +1,52 @@
-# VladimirHuarachiCopa
+﻿# Vladimir Huarachi Copa
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Sitio web frontend para la publicación de artículos de Vladimir Huarachi Copa.
 
-## Development server
-
-To start a local development server, run:
+## Desarrollo local
 
 ```bash
-ng serve
+npm install
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+El sitio local se abre normalmente en:
 
-## Code scaffolding
+```text
+http://localhost:4200
+```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Build
 
 ```bash
-ng generate component component-name
+npm run build
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Antes de compilar, el proyecto genera automáticamente `src/app/core/data/articles.ts` desde los archivos Markdown ubicados en:
 
-```bash
-ng generate --help
+```text
+src/content/articles
 ```
 
-## Building
+No editar manualmente `src/app/core/data/articles.ts`.
 
-To build the project run:
+## Artículos
 
-```bash
-ng build
+Los artículos se editan como archivos `.md` dentro de:
+
+```text
+src/content/articles
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+La página de inicio muestra automáticamente los últimos 3 artículos según la fecha del nombre del archivo.
 
-## Running unit tests
+## Panel Decap CMS
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+El panel está disponible en:
 
-```bash
-ng test
+```text
+/admin
 ```
 
-## Running end-to-end tests
+Los usuarios deben tener permisos en GitHub para guardar cambios en el repositorio.
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Importante: en Vercel, Decap CMS necesita un proveedor OAuth compatible con GitHub para poder iniciar sesión y escribir en el repositorio. La interfaz ya está preparada en `public/admin`, pero el login debe completarse con una configuración OAuth/GitHub compatible.

@@ -1,0 +1,73 @@
+﻿backend:
+  name: github
+  repo: Dannyamus/vladimirhuarachicopa
+  branch: main
+  base_url: https://api.netlify.com
+
+publish_mode: editorial_workflow
+media_folder: public/images/uploads
+public_folder: /images/uploads
+locale: es
+
+collections:
+  - name: articulos
+    label: Artículos
+    label_singular: Artículo
+    folder: src/content/articles
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields:
+      - date
+      - title
+      - category
+    view_filters:
+      - label: Opinión
+        field: category
+        pattern: Opinión
+      - label: Política
+        field: category
+        pattern: Política
+    fields:
+      - label: Título
+        name: title
+        widget: string
+        required: true
+      - label: Slug / URL
+        name: slug
+        widget: string
+        required: true
+        hint: "Usar minúsculas, sin espacios ni tildes. Ejemplo: dialogo-basado-en-que"
+      - label: Fecha visible
+        name: date
+        widget: string
+        required: true
+        hint: "Ejemplo: 10 de julio de 2026"
+      - label: Categoría
+        name: category
+        widget: select
+        required: true
+        options:
+          - Opinión
+          - Política
+          - Sociedad
+          - Cultura
+          - Educación
+          - Relaciones internacionales
+      - label: Resumen
+        name: excerpt
+        widget: text
+        required: true
+        hint: "Resumen breve para la tarjeta del artículo."
+      - label: Tiempo de lectura
+        name: readingTime
+        widget: string
+        required: true
+        default: "5 min de lectura"
+      - label: Contenido
+        name: body
+        widget: markdown
+        required: true
+        hint: "Cada párrafo debe estar separado por una línea en blanco."
