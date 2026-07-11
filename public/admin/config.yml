@@ -2,7 +2,8 @@
   name: github
   repo: Dannyamus/vladimirhuarachicopa
   branch: main
-  base_url: https://api.netlify.com
+  base_url: https://www.vladimirhuarachicopa.com
+  auth_endpoint: api/auth
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
@@ -70,4 +71,5 @@ collections:
         widget: markdown
         required: true
         hint: "Cada párrafo debe estar separado por una línea en blanco."
+
 
