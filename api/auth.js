@@ -39,7 +39,7 @@ module.exports = function handler(req, res) {
     return;
   }
 
-  const origin = getOrigin(req);
+  const origin = getOrigin();
   const state = randomUUID();
   const callbackUrl = `${origin}/api/auth/callback`;
   const githubUrl = new URL(GITHUB_AUTHORIZE_URL);
