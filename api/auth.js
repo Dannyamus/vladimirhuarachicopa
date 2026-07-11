@@ -68,10 +68,19 @@ module.exports = function handler(req, res) {
     }
   });
 
-  if (window.opener) {
-    window.opener.postMessage('authorizing:' + provider, window.location.origin);
-  } else {
+  let redirected = false;
+
+  function safeContinueToGitHub() {
+    if (redirected) return;
+    redirected = true;
     continueToGitHub();
+  }
+
+  if (window.opener) {
+    window.opener.postMessage('authorizing:' + provider, '*');
+    window.setTimeout(safeContinueToGitHub, 800);
+  } else {
+    safeContinueToGitHub();
   }
 </script>`),
   );
