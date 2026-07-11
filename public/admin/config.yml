@@ -71,5 +71,3 @@ collections:
         widget: markdown
         required: true
         hint: "Cada párrafo debe estar separado por una línea en blanco."
-
-
