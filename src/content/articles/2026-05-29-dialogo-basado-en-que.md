@@ -1,10 +1,11 @@
-﻿---
+---
 title: "OPINIÓN: ¿Diálogo basado en qué?"
-slug: "opinion-dialogo-basado-en-que"
-date: "29 de mayo de 2026"
-category: "Opinión · Política"
-excerpt: "Una reflexión sobre las condiciones reales que deberían sostener un diálogo político frente a conflictos prolongados y demandas sociales urgentes."
-readingTime: "5 min de lectura"
+slug: opinion-dialogo-basado-en-que
+date: 29 de mayo de 2026
+category: Opinión · Política
+excerpt: Una reflexión sobre las condiciones reales que deberían sostener un
+  diálogo político frente a conflictos prolongados y demandas sociales.
+readingTime: 5 min de lectura
 ---
 
 Si el objetivo declarado del presidente Rodrigo Paz es el diálogo como medio para solucionar los conflictos que ya superan los veinte días, entonces cabe una pregunta fundamental: ¿sobre qué bases se pretende construir ese diálogo?
