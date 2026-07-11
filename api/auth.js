@@ -2,10 +2,8 @@ const { randomUUID } = require('node:crypto');
 
 const GITHUB_AUTHORIZE_URL = 'https://github.com/login/oauth/authorize';
 
-function getOrigin(req) {
-  const proto = req.headers['x-forwarded-proto'] || 'https';
-  const host = req.headers['x-forwarded-host'] || req.headers.host;
-  return `${proto}://${host}`;
+function getOrigin() {
+  return 'https://www.vladimirhuarachicopa.com';
 }
 
 function html(body) {
