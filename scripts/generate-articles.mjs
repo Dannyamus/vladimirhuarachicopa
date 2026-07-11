@@ -1,4 +1,4 @@
-﻿import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join } from 'node:path';
 
 const articlesDir = 'src/content/articles';
@@ -15,9 +15,19 @@ function parseFrontMatter(source, fileName) {
   const frontMatter = match[1];
   const body = match[2].trim();
 
+  let currentKey = '';
+
   for (const line of frontMatter.split(/\r?\n/)) {
+    if (/^\s+/.test(line) && currentKey && typeof meta[currentKey] === 'string') {
+      meta[currentKey] = `${meta[currentKey]} ${line.trim()}`.trim();
+      continue;
+    }
+
     const separator = line.indexOf(':');
-    if (separator === -1) continue;
+    if (separator === -1) {
+      currentKey = '';
+      continue;
+    }
 
     const key = line.slice(0, separator).trim();
     let value = line.slice(separator + 1).trim();
@@ -29,6 +39,8 @@ function parseFrontMatter(source, fileName) {
     if (value === 'true') meta[key] = true;
     else if (value === 'false') meta[key] = false;
     else meta[key] = value;
+
+    currentKey = key;
   }
 
   const fallbackSlug = basename(fileName, '.md').replace(/^\d{4}-\d{2}-\d{2}-/, '');

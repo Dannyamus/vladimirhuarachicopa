@@ -49,8 +49,10 @@ collections:
         name: category
         widget: select
         required: true
+        default: Opinión
         options:
           - Opinión
+          - Opinión · Política
           - Política
           - Sociedad
           - Cultura
@@ -60,7 +62,10 @@ collections:
         name: excerpt
         widget: text
         required: true
-        hint: "Resumen breve para la tarjeta del artículo."
+        hint: "Resumen breve para la tarjeta del artículo. No borrar este campo; aparece en el inicio y en el listado."
+        pattern:
+          - ".{40,}"
+          - "El resumen debe tener al menos 40 caracteres."
       - label: Tiempo de lectura
         name: readingTime
         widget: string
@@ -70,4 +75,7 @@ collections:
         name: body
         widget: markdown
         required: true
-        hint: "Cada párrafo debe estar separado por una línea en blanco."
+        hint: "Cada párrafo debe estar separado por una línea en blanco. Para evitar cambios accidentales, editar en modo Markdown."
+        default_mode: raw
+        modes:
+          - raw

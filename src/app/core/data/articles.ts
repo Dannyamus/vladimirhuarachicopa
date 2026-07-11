@@ -5,7 +5,7 @@ export const ARTICLES: Article[] = [
   {
     "slug": "opinion-dialogo-basado-en-que",
     "title": "OPINIÓN: ¿Diálogo basado en qué?",
-    "excerpt": "Una reflexión sobre las condiciones reales que deberían sostener un diálogo político frente a conflictos prolongados y demandas sociales urgentes.",
+    "excerpt": "Una reflexión sobre las condiciones reales que deberían sostener un diálogo político frente a conflictos prolongados y demandas sociales.",
     "category": "Opinión · Política",
     "date": "29 de mayo de 2026",
     "readingTime": "5 min de lectura",
