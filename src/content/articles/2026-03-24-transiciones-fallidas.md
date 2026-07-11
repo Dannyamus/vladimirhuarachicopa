@@ -5,7 +5,6 @@ date: "24 de marzo de 2026"
 category: "Opinión"
 excerpt: "Las victorias, presentadas como irreversibles, de los candidatos en las elecciones subnacionales del 22 de marzo en todo el territorio boliviano."
 readingTime: "5 min de lectura"
-featured: true
 ---
 
 Las victorias, presentadas como irreversibles, de los candidatos en las elecciones subnacionales del 22 de marzo en todo el territorio boliviano no deberían, por sí solas, encumbrar sus programas de gobierno. Tras alcanzar esta hazaña electoral, conviene recordar que lo que atraviesan no es más que un momento transitorio, el paso de la campaña a la responsabilidad, de la promesa al compromiso.
@@ -25,3 +24,4 @@ Por ello, las transiciones fallidas en los distintos rincones del país no son h
 Entonces, ¿qué le espera a Bolivia? La reiteración de un ciclo, una nueva sala de tortura política donde se induce al olvido, para que, cinco años después, los ciudadanos vuelvan a elegir a otro verdugo que reactive el mismo “shock”.
 
 Por Vladimir Huarachi Copa
+

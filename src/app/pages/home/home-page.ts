@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ARTICLES } from '../../core/data/articles';
 
@@ -9,6 +9,5 @@ import { ARTICLES } from '../../core/data/articles';
   styleUrl: './home-page.scss',
 })
 export class HomePage {
-  protected readonly articles = ARTICLES;
-  protected readonly featuredArticle = ARTICLES.find((article) => article.featured) ?? ARTICLES[0];
+  protected readonly articles = ARTICLES.slice(0, 3);
 }

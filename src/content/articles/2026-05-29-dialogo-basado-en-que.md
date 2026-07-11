@@ -5,7 +5,6 @@ date: "29 de mayo de 2026"
 category: "Opinión · Política"
 excerpt: "Una reflexión sobre las condiciones reales que deberían sostener un diálogo político frente a conflictos prolongados y demandas sociales urgentes."
 readingTime: "5 min de lectura"
-featured: true
 ---
 
 Si el objetivo declarado del presidente Rodrigo Paz es el diálogo como medio para solucionar los conflictos que ya superan los veinte días, entonces cabe una pregunta fundamental: ¿sobre qué bases se pretende construir ese diálogo?
@@ -29,3 +28,4 @@ Finalmente, cabe preguntarse: ¿a qué responde esta persistencia en una narrati
 En definitiva, el llamado al diálogo pierde sustento si no se reconstruyen previamente sus bases. Sin respeto ni confianza, el diálogo no es más que una consigna vacía.
 
 Por Vladimir Huarachi Copa
+

@@ -5,7 +5,6 @@ date: "6 de abril de 2026"
 category: "Opinión"
 excerpt: "Un análisis sobre la erosión institucional, los riesgos para la democracia boliviana y las tensiones que amenazan su continuidad efectiva."
 readingTime: "5 min de lectura"
-featured: true
 ---
 
 Es sabido que la democracia boliviana se ha venido corroyendo durante los últimos años; sin embargo, hoy parece encaminarse a su colapso como consecuencia de la permanente intromisión a la que están sometidas las instituciones que la sostienen. En contraposición a este escenario calamitoso, en la nueva legislatura en la que se ha embarcado el país, el senador Nilton Condori ha salido a explicar aquello que ya se sabía sobre la hermenéutica de trabajo de senadores y diputados: un desempeño mediocre que no justifica los salarios que perciben.
@@ -23,3 +22,4 @@ En este contexto, cabe preguntarse si este cabildo tendrá viabilidad en el cort
 Por ello, más que profundizar salidas de carácter populista, resulta imperativo que el gobierno democráticamente electo y los legisladores asuman la responsabilidad de articular un proyecto común de país, dejando de lado la lógica clientelar que ha marcado su accionar hasta ahora. De no hacerlo, el deterioro de la democracia no solo continuará, sino que podría incluso acelerarse de manera irreversible.
 
 Por Vladimir Huarachi Copa
+

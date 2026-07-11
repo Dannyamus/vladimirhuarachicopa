@@ -13,6 +13,8 @@ Usa siempre:
 - Sin espacios ni tildes en el nombre del archivo
 - Extensión `.md`
 
+La página de inicio mostrará automáticamente los últimos 3 artículos según la fecha del nombre del archivo. No hace falta marcar artículos como destacados.
+
 ## Plantilla
 
 ```md
@@ -23,7 +25,6 @@ date: "10 de julio de 2026"
 category: "Opinión"
 excerpt: "Resumen breve del artículo en una o dos líneas."
 readingTime: "5 min de lectura"
-featured: false
 ---
 
 Por Vladimir Huarachi Copa
@@ -41,6 +42,5 @@ Cada párrafo debe estar separado por una línea en blanco.
 - `category`: categoría del artículo.
 - `excerpt`: resumen corto para tarjetas y listados.
 - `readingTime`: tiempo aproximado de lectura.
-- `featured`: usar `true` solo para el artículo principal; los demás deben quedar en `false`.
 
 Después de guardar el archivo en GitHub, Vercel actualizará la web automáticamente.

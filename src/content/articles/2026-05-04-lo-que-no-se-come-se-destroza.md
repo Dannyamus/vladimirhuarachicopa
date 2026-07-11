@@ -5,7 +5,6 @@ date: "4 de mayo de 2026"
 category: "Opinión"
 excerpt: "Una mirada crítica sobre el deterioro de lo público, la responsabilidad colectiva y las formas cotidianas en que se debilita aquello que debería cuidarse."
 readingTime: "4 min de lectura"
-featured: true
 ---
 
 Cuando realizaba mi servicio militar, allá por el año 2003, el oficial de compañía al que había sido asignado solía llamarnos la atención por los destrozos ocasionados al material militar. Decía, a modo de reprimenda, que todo lo que no comíamos lo destrozábamos, y que esa era una máxima del ciudadano boliviano. En ese entonces, claro está, no le di mayor importancia; aquella idea ya se había normalizado dentro de la compañía.
@@ -21,3 +20,4 @@ En medio de esta crisis, energética, política y económica, parece instalarse 
 En ese contexto, el gobierno del presidente Paz parece avanzar en una dirección preocupante. Tras iniciar su gestión con altos niveles de popularidad, transitó hacia una concentración de poder que luego derivó en la reducción de la autonomía de su vicepresidente y de otras instancias potencialmente críticas. Hoy, ante la incapacidad de resolver problemas urgentes, especialmente el de los combustibles, surgen señales de restricción al derecho a la libre expresión, en un intento por contener el desgaste político.
 
 Por Vladimir Huarachi Copa
+

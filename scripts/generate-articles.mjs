@@ -44,7 +44,6 @@ function parseFrontMatter(source, fileName) {
     category: meta.category || 'Opinión',
     date: meta.date,
     readingTime: meta.readingTime || 'Lectura',
-    featured: meta.featured === true,
     content,
   };
 }
@@ -66,3 +65,4 @@ const generated = `// Archivo generado automáticamente desde src/content/articl
 
 writeFileSync(outputFile, generated, 'utf8');
 console.log(`Generados ${articles.length} artículos en ${outputFile}`);
+
