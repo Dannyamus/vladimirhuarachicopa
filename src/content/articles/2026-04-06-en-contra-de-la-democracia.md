@@ -1,10 +1,11 @@
-﻿---
-title: "En contra de la democracia"
-slug: "en-contra-de-la-democracia"
-date: "6 de abril de 2026"
-category: "Opinión"
-excerpt: "Un análisis sobre la erosión institucional, los riesgos para la democracia boliviana y las tensiones que amenazan su continuidad efectiva."
-readingTime: "5 min de lectura"
+---
+title: En contra de la democracia
+slug: en-contra-de-la-democracia
+date: 6 de abril de 2026
+category: Opinión
+excerpt: Un análisis sobre la erosión institucional, los riesgos para la
+  democracia boliviana y las tensiones que amenazan su continuidad efectivaaaa.
+readingTime: 5 min de lectura
 ---
 
 Es sabido que la democracia boliviana se ha venido corroyendo durante los últimos años; sin embargo, hoy parece encaminarse a su colapso como consecuencia de la permanente intromisión a la que están sometidas las instituciones que la sostienen. En contraposición a este escenario calamitoso, en la nueva legislatura en la que se ha embarcado el país, el senador Nilton Condori ha salido a explicar aquello que ya se sabía sobre la hermenéutica de trabajo de senadores y diputados: un desempeño mediocre que no justifica los salarios que perciben.
