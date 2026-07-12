@@ -3,6 +3,32 @@ import { basename, join } from 'node:path';
 
 const articlesDir = 'src/content/articles';
 const outputFile = 'src/app/core/data/articles.ts';
+const monthNames = [
+  'enero',
+  'febrero',
+  'marzo',
+  'abril',
+  'mayo',
+  'junio',
+  'julio',
+  'agosto',
+  'septiembre',
+  'octubre',
+  'noviembre',
+  'diciembre',
+];
+
+function formatDisplayDate(value) {
+  const date = String(value || '').trim();
+  const isoMatch = date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+
+  if (!isoMatch) {
+    return date;
+  }
+
+  const [, year, month, day] = isoMatch;
+  return Number(day) + ' de ' + monthNames[Number(month) - 1] + ' de ' + year;
+}
 
 function parseFrontMatter(source, fileName) {
   const match = source.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
@@ -54,7 +80,7 @@ function parseFrontMatter(source, fileName) {
     title: meta.title,
     excerpt: meta.excerpt,
     category: meta.category || 'Opinión',
-    date: meta.date,
+    date: formatDisplayDate(meta.date),
     readingTime: meta.readingTime || 'Lectura',
     content,
   };
