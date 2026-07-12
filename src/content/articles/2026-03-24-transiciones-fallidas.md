@@ -1,10 +1,11 @@
-﻿---
-title: "Transiciones Fallidas"
-slug: "transiciones fallidas"
-date: "24 de marzo de 2026"
-category: "Opinión"
-excerpt: "Las victorias, presentadas como irreversibles, de los candidatos en las elecciones subnacionales del 22 de marzo en todo el territorio boliviano."
-readingTime: "5 min de lectura"
+---
+title: Transiciones Fallidas
+slug: transiciones-fallidas
+date: 24 de marzo de 2026
+category: Opinión
+excerpt: Las victorias, presentadas como irreversibles, de los candidatos en las
+  elecciones subnacionales del 22 de marzo en todo el territorio boliviano.
+readingTime: 5 min de lectura
 ---
 
 Las victorias, presentadas como irreversibles, de los candidatos en las elecciones subnacionales del 22 de marzo en todo el territorio boliviano no deberían, por sí solas, encumbrar sus programas de gobierno. Tras alcanzar esta hazaña electoral, conviene recordar que lo que atraviesan no es más que un momento transitorio, el paso de la campaña a la responsabilidad, de la promesa al compromiso.
