@@ -1,7 +1,7 @@
 ---
 title: Transiciones Fallidas
 slug: transiciones-fallidas
-date: 24 de marzo de 2026
+date: 2026-03-24
 category: Opinión
 excerpt: Las victorias, presentadas como irreversibles, de los candidatos en las
   elecciones subnacionales del 22 de marzo en todo el territorio boliviano.
