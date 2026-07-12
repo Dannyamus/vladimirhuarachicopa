@@ -1,59 +1,116 @@
 {
-    "$schema":  "https://openapi.vercel.sh/vercel.json",
-    "git":  {
-                "deploymentEnabled":  {
-                                          "*":  false,
-                                          "main":  true
-                                      }
-            },
-    "redirects":  [
-                      {
-                          "source":  "/:path*",
-                          "has":  [
-                                      {
-                                          "type":  "host",
-                                          "value":  "vladimirhuarachicopa.com"
-                                      }
-                                  ],
-                          "destination":  "https://www.vladimirhuarachicopa.com/:path*",
-                          "permanent":  true
-                      }
-                  ],
-    "headers":  [
-                    {
-                        "source":  "/(.*)",
-                        "headers":  [
-                                        {
-                                            "key":  "Content-Security-Policy",
-                                            "value":  "default-src \u0027self\u0027; base-uri \u0027self\u0027; object-src \u0027none\u0027; frame-ancestors \u0027none\u0027; form-action \u0027self\u0027 https://github.com; script-src \u0027self\u0027 \u0027unsafe-eval\u0027 https://unpkg.com; style-src \u0027self\u0027 \u0027unsafe-inline\u0027 https://fonts.googleapis.com; font-src \u0027self\u0027 https://fonts.gstatic.com; img-src \u0027self\u0027 data: https:; connect-src \u0027self\u0027 https://api.github.com https://github.com https://unpkg.com; upgrade-insecure-requests"
-                                        },
-                                        {
-                                            "key":  "X-Content-Type-Options",
-                                            "value":  "nosniff"
-                                        },
-                                        {
-                                            "key":  "X-Frame-Options",
-                                            "value":  "DENY"
-                                        },
-                                        {
-                                            "key":  "Referrer-Policy",
-                                            "value":  "strict-origin-when-cross-origin"
-                                        },
-                                        {
-                                            "key":  "Permissions-Policy",
-                                            "value":  "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
-                                        },
-                                        {
-                                            "key":  "Strict-Transport-Security",
-                                            "value":  "max-age=31536000"
-                                        }
-                                    ]
-                    }
-                ],
-    "rewrites":  [
-                     {
-                         "source":  "/((?!.*\\..*).*)",
-                         "destination":  "/index.html"
-                     }
-                 ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": {
+    "deploymentEnabled": {
+      "*": false,
+      "main": true
+    }
+  },
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "vladimirhuarachicopa.com"
+        }
+      ],
+      "destination": "https://www.vladimirhuarachicopa.com/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/admin/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' https://github.com; script-src 'self' 'unsafe-eval' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.github.com https://github.com https://unpkg.com; upgrade-insecure-requests"
+        },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000" },
+        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+      ]
+    },
+    {
+      "source": "/api/auth(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; upgrade-insecure-requests"
+        },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000" },
+        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; upgrade-insecure-requests"
+        },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
+      ]
+    },
+    {
+      "source": "/articulos",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; upgrade-insecure-requests"
+        },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
+      ]
+    },
+    {
+      "source": "/articulos/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; upgrade-insecure-requests"
+        },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
+      ]
+    },
+    {
+      "source": "/sobre-el-autor",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; upgrade-insecure-requests"
+        },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ]
 }
