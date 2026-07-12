@@ -1,10 +1,12 @@
-﻿---
-title: "Lo que no se come se destroza"
-slug: "lo-que-no-se-come-se-destroza"
-date: "4 de mayo de 2026"
-category: "Opinión"
-excerpt: "Una mirada crítica sobre el deterioro de lo público, la responsabilidad colectiva y las formas cotidianas en que se debilita aquello que debería cuidarse."
-readingTime: "4 min de lectura"
+---
+title: Lo que no se come se destroza
+slug: lo-que-no-se-come-se-destroza
+date: 2026-05-04
+category: Opinión
+excerpt: Una mirada crítica sobre el deterioro de lo público, la responsabilidad
+  colectiva y las formas cotidianas en que se debilita aquello que debería
+  cuidarse.
+readingTime: 4 min de lectura
 ---
 
 Cuando realizaba mi servicio militar, allá por el año 2003, el oficial de compañía al que había sido asignado solía llamarnos la atención por los destrozos ocasionados al material militar. Decía, a modo de reprimenda, que todo lo que no comíamos lo destrozábamos, y que esa era una máxima del ciudadano boliviano. En ese entonces, claro está, no le di mayor importancia; aquella idea ya se había normalizado dentro de la compañía.
