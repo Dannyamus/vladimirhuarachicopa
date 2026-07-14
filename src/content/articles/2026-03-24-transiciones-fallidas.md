@@ -22,7 +22,7 @@ Así, pareciera que en Bolivia los ciudadanos estamos condenados a transiciones 
 
 Por ello, las transiciones fallidas en los distintos rincones del país no son hechos aislados, sino la extensión de una transición nacional igualmente fallida: marcada por la incertidumbre, la opacidad y la falta de rendición de cuentas. Basta un ejemplo, el caso de las 32 maletas provenientes de Estados Unidos. A la fecha, 24 de marzo, han transcurrido 62 días sin que se conozca información clara al respecto. Todo indica que el objetivo es diluir el tema en medio del ruido electoral y los nuevos temores que acompañan a cada cambio de autoridades.
 
-Entonces, ¿qué le espera a Bolivia? La reiteración de un ciclo, una nueva sala de tortura política donde se induce al olvido, para que, cinco años después, los ciudadanos vuelvan a elegir a otro verdugo que reactive el mismo “shock”
+Entonces, ¿qué le espera a Bolivia? La reiteración de un ciclo, una nueva sala de tortura política donde se induce al olvido, para que, cinco años después, los ciudadanos vuelvan a elegir a otro verdugo que reactive el mismo “shock”.
 
 Por Vladimir Huarachi Copa
 
