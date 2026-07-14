@@ -1,5 +1,5 @@
 ---
-title: "OPINIÓN: ¿Diálogo basado en qué?"
+title: ¿Diálogo basado en qué?
 slug: opinion-dialogo-basado-en-que
 date: 2026-05-29
 category: Opinión · Política
