@@ -2,7 +2,7 @@
 title: ¿Diálogo basado en qué?
 slug: opinion-dialogo-basado-en-que
 date: 2026-05-29
-category: Opinión · Política
+category: Opinión
 excerpt: Una reflexión sobre las condiciones reales que deberían sostener un
   diálogo político frente a conflictos prolongados y demandas sociales.
 readingTime: 5 min de lectura
