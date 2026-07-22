@@ -18,6 +18,35 @@ const monthNames = [
   'diciembre',
 ];
 
+function getDateTimestamp(value, fileName) {
+  const date = String(value || '').trim();
+  const isoMatch = date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  const fileDateMatch = fileName.match(/^(\d{4})-(\d{2})-(\d{2})-/);
+
+  if (isoMatch) {
+    const [, year, month, day] = isoMatch;
+    return Date.UTC(Number(year), Number(month) - 1, Number(day));
+  }
+
+  const spanishMatch = date.match(/^(\d{1,2}) de ([a-záéíóúñ]+) de (\d{4})$/i);
+
+  if (spanishMatch) {
+    const [, day, monthName, year] = spanishMatch;
+    const monthIndex = monthNames.indexOf(monthName.toLowerCase());
+
+    if (monthIndex !== -1) {
+      return Date.UTC(Number(year), monthIndex, Number(day));
+    }
+  }
+
+  if (fileDateMatch) {
+    const [, year, month, day] = fileDateMatch;
+    return Date.UTC(Number(year), Number(month) - 1, Number(day));
+  }
+
+  return 0;
+}
+
 function formatDisplayDate(value) {
   const date = String(value || '').trim();
   const isoMatch = date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
@@ -76,20 +105,24 @@ function parseFrontMatter(source, fileName) {
     .filter(Boolean);
 
   return {
-    slug: meta.slug || fallbackSlug,
-    title: meta.title,
-    excerpt: meta.excerpt,
-    category: meta.category || 'Opinión',
-    date: formatDisplayDate(meta.date),
-    readingTime: meta.readingTime || 'Lectura',
-    content,
+    sortDate: getDateTimestamp(meta.date, fileName),
+    article: {
+      slug: meta.slug || fallbackSlug,
+      title: meta.title,
+      excerpt: meta.excerpt,
+      category: meta.category || 'Opinión',
+      date: formatDisplayDate(meta.date),
+      readingTime: meta.readingTime || 'Lectura',
+      content,
+    },
   };
 }
 
 const articles = readdirSync(articlesDir)
   .filter((file) => file.endsWith('.md') && !file.startsWith('_') && file !== 'README.md')
-  .sort((a, b) => b.localeCompare(a))
-  .map((file) => parseFrontMatter(readFileSync(join(articlesDir, file), 'utf8'), file));
+  .map((file) => ({ file, ...parseFrontMatter(readFileSync(join(articlesDir, file), 'utf8'), file) }))
+  .sort((a, b) => b.sortDate - a.sortDate || b.file.localeCompare(a.file))
+  .map(({ article }) => article);
 
 for (const article of articles) {
   for (const key of ['slug', 'title', 'excerpt', 'category', 'date', 'readingTime']) {
