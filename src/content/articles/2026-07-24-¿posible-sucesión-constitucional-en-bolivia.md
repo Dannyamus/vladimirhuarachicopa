@@ -3,10 +3,10 @@ title: ¿Posible Sucesión Constitucional en Bolivia?
 slug: posible-sucesion-constitucional-en-bolivia
 date: 2025-10-08
 category: Opinión
-excerpt: "La posibilidad de que Andrónico Rodríguez llegue a la presidencia de
+excerpt: La posibilidad de que Andrónico Rodríguez llegue a la presidencia de
   Bolivia mediante una sucesión constitucional, resultado directo de una “guerra
   legal” previa, aún parezca un escenario distópico, no puede descartarse del
-  todo en un país donde lo inverosímil se vuelve posible. "
+  todo en un país donde lo inverosímil se vuelve posible.
 readingTime: 4 min de lectura
 ---
 Hace aproximadamente un mes, el presidente Luis Arce, en una conferencia de prensa, afirmó que no abandonaría el país al finalizar su mandato. Sin embargo, también mencionó que viajaría a Brasil para una revisión médica anual, aclarando que no se trataría de una fuga. ¿Por qué, entonces, el presidente Arce insistiría tanto en que no escapará del país? ¿Acaso ya anticipaba una posible sucesión constitucional basada en el argumento de fraude electoral y en la denuncia contra los magistrados autoprorrogados?
