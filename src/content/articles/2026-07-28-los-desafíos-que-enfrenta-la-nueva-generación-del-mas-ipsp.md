@@ -25,3 +25,5 @@ De este modo, estaría prácticamente obligado a luchar en un proceso de reorien
 Sobre ese camino de reinvención de proyecto político en la que se encuentra el proceso de reorientación también se halla la eliminación de toda resistencia dentro la organización, a través de estrategias violentas de descalificación entre militantes de la misma estructura política, con el posible fin de sobreponerse al sistema político del pasado constituida en esa opresora generación antecesora de políticos.
 
 Bajo estas premisas, el Presidente del Senado y su gestión pueden contribuir a responder a la pregunta planteada respecto a si es o no el tiempo de una nueva generación de actores políticos dentro el MAS-IPSP, en razón de que se expone como una reconducción de ese Proceso de Cambio por medio de una apertura a las nuevas generaciones de jóvenes, ya que estos serán los que decidirán la soberanía del país.
+
+Por Vladimir Huarachi Copa
