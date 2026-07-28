@@ -3,9 +3,9 @@ title: Elementos mínimos para una izquierda democrática
 slug: elementos-minimos-para-una-izquierda-democratica
 date: 2026-01-13
 category: Opinión
-excerpt: "Observando el escenario político actual, a la izquierda boliviana,
-  tras tantos años de experiencia en el poder, aparentemente no le queda otro
-  camino que transitar hacia una izquierda democrática. "
+excerpt: Observando el escenario político actual, a la izquierda boliviana, tras
+  tantos años de experiencia en el poder, aparentemente no le queda otro camino
+  que transitar hacia una izquierda democrática.
 readingTime: 5 min de lectura
 ---
 La situación por la que atraviesa la izquierda en Bolivia, al menos en lo que va del presente siglo, se ha visto atrapada en tradiciones que resultan imposibles de ser criticadas. En lugar de construir nuevas tradiciones que le permitan trascender hacia otra forma de hacer política acorde a los tiempos que vive el país, la izquierda ha optado por aferrarse a prácticas que la inmovilizan. Otro elemento que merece ser observado es la falta de reconocimiento de las reglas de la democracia, motivo por el cual no se genera un hálito de confianza en las distintas generaciones de ciudadanos. Un ejemplo claro de ello es la actual administración de Rodrigo Paz, que viene perdiendo progresivamente la confianza de su electorado.
