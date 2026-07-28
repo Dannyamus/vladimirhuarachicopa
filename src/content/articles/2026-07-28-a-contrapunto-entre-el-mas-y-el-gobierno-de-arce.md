@@ -1,7 +1,7 @@
 ---
 title: A contrapunto entre el MAS y el Gobierno de Arce
 slug: a-contrapunto-entre-el-mas-y-el-gobierno-de-arce
-date: 2021-06-21
+date: 2023-06-21
 category: Opinión
 excerpt: La gente ya no estaría apostando por líderes políticos de izquierda y
   derecha, sino, por un componente más de la democracia fundado en la paz
