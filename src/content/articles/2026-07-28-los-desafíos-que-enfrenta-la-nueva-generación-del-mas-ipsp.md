@@ -3,11 +3,9 @@ title: Los desafíos que enfrenta la nueva generación del MAS-IPSP
 slug: los-desafios-que-enfrenta-la-nueva-generacion-del-mas-ipsp
 date: 2023-01-29
 category: Opinión
-excerpt: >+
-  El Presidente del Senado, al ser parte de una nueva generación, por tanto del
-  presente, se apuntala como la expresión de vida del Proceso de Cambio, de esa
-  misma organización en la que se forjó como político.
-
+excerpt: El Presidente del Senado, al ser parte de una nueva generación, por
+  tanto del presente, se apuntala como la expresión de vida del Proceso de
+  Cambio, de esa misma organización en la que se forjó como político.
 readingTime: 4 min de lectura
 ---
 A partir del nuevo giro a la izquierda en Bolivia (de octubre de 2020), y tras la crisis política y sanitaria, el país ha presenciado el encumbramiento de nuevos actores en la Cámara de Senadores, algunos con experiencia en el ámbito de la gestión pública y otros con recorrido dentro sus organizaciones sociales, quienes tuvieron que afrontar un reto de trascendencia mundial como lo fue la crisis sanitaria derivada del Covid-19. Asimismo, el reto de construir la paz social, consenso político y de “unidad del país”, dado que los antecesores políticos, del oficialismo y la oposición por igual, dejaron un escenario polarizado.
