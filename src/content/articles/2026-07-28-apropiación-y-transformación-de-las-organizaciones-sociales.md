@@ -3,9 +3,9 @@ title: Apropiación y transformación de las organizaciones sociales
 slug: apropiacion-y-transformacion-de-las-organizaciones-sociales
 date: 2016-05-06
 category: Opinión
-excerpt: "Las organizaciones que no fueron apropiadas por el “instrumento
+excerpt: Las organizaciones que no fueron apropiadas por el “instrumento
   político” sobreviven en condiciones de permanente vulnerabilidad, muchas de
-  ellas al borde de la desaparición. "
+  ellas al borde de la desaparición.
 readingTime: 5 min de lectura
 ---
 De un tiempo a esta parte, la política boliviana ha presentado un escenario de múltiples disfraces. Los corderos se visten de leones y, a su vez, los leones se disfrazan de corderos. Aunque esta metáfora forme parte del sentido común en el análisis político, su vigencia no deja de manifestarse de manera recurrente en la práctica. En este artículo de opinión me propongo exponer el proceso experimentado por las organizaciones sociales bolivianas que, en su momento, coadyuvaron al ascenso del denominado “instrumento político”. Sin embargo, el panorama político actual revela la existencia de organizaciones sociales paralelas. En los siguientes párrafos desarrollo dos procesos metabólicos —la apropiación y la transformación— por los que atravesaron dichas organizaciones.
