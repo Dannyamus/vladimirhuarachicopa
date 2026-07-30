@@ -9,7 +9,7 @@ excerpt: En el MAS-IPSP, entre la “propuesta” de país de políticos que for
   como única consigna de salida, con el fin de construir otra propuesta de país,
   acorde a los problemas locales y globales; entre lo urgente, la crisis
   medioambiental.
-readingTime: 5 min de lectura
+readingTime: 6 min de lectura
 ---
 Tras 14 años de gobierno del Movimiento Al Socialismo – Instrumento Por la Soberanía de los Pueblos (MAS – IPSP), la última vez que los medios y la sociedad civil intercambiaron información sobre la derecha en Bolivia, se remite al 2019 y 2020. No obstante, en ese entonces, no se le reconoce como diferente a otras derechas que pasaron en la historia democrática, pese a que tuvieron de su lado a la mayoría de los medios tradicionales y digitales para alterar opiniones.
 
