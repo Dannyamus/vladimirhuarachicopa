@@ -3,8 +3,9 @@ title: El arrastre de la crisis económica boliviana
 slug: el-arrastre-de-la-crisis-economica-boliviana
 date: 2023-12-13
 category: Opinión
-excerpt: "La caída de las RIN se traducen en un arrastre de una crisis económica
-  y no en una crisis circunstancial. "
+excerpt: Posterior al pico mayor de bonanza, los años siguientes, la caída de
+  las RIN se traducen en un arrastre de una crisis económica y no en una crisis
+  circunstancial, como se expone en el comunicado del BCB.
 readingTime: 6 min de lectura
 ---
 El 6 de diciembre del presente año, en un comunicado que emitió el Banco Central de Bolivia (BCB), se explica que el nivel alcanzado por las Reservas Internacionales Netas (RIN) a agosto de la presente gestión es de $us 2.147 millones, principalmente, por una parte, a causa de la no realización de inversiones en exploración ni producción en el sector hidrocarburífero, que provocó una disminución en la actual producción, implicando menores ingresos de divisas al país. Asimismo, se expone que, pese a ello, con la finalidad de proteger el poder adquisitivo de la población, se mantuvo la subvención del diésel y la gasolina.
