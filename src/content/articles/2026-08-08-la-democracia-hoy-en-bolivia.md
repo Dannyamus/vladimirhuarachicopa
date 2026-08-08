@@ -3,9 +3,9 @@ title: La democracia hoy en Bolivia
 slug: la-democracia-hoy-en-bolivia
 date: 2024-03-29
 category: Opinión
-excerpt: "Los principios fundamentales no pueden ser admitidos sin límites, como
+excerpt: Los principios fundamentales no pueden ser admitidos sin límites, como
   cualquier libertad. Por lo que, el cambio de límites, de aumento o reducción,
-  determina el grado de democratización de un sistema. "
+  determina el grado de democratización de un sistema.
 readingTime: 4 min de lectura
 ---
 La democracia hoy en Bolivia sigue fundado en dos nociones básicas. La primera, en una forma de gobierno basada en el autogobierno del pueblo; y, la segunda, en instituciones libremente elegidas. Pese a que estas nociones responden a distintos tiempos, la primera, es la que se conoce más cuando se hace referencia a democracia, sin embargo, la segunda, no se deja de seguir al momento de elegir las instituciones del Órgano Ejecutivo, Legislativo y Judicial.
