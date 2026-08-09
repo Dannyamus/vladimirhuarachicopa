@@ -7,7 +7,7 @@ category: Opinión
 excerpt: La creación de la Agencia de Inteligencia Plurinacional y la Guardia
   Plurinacional, como medios para combatir la corrupción dentro la Policía
   Boliviana y las FF.AA., además de otros fundamentos, no tendrían razón de ser.
-readingTime: 5 min de lectura
+readingTime: 6 min de lectura
 ---
 Se escribe este documento a modo de distopía a razón de ideas de actores políticos estructurales que exponen la necesidad de generar organizaciones que se posicionen como contrapesos a la Policía Boliviana y las Fuerzas Armadas (FF.AA.). Para la primera, se propone una Agencia de Inteligencia Plurinacional, con el fin de afrontar actividades del crimen organizado, de esta manera restar a la Policía Boliviana la responsabilidad de ser “juez y parte” en relación a sus elementos que hayan transgredido la Ley Orgánica de la Policía.
 
