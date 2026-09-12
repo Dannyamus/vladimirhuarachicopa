@@ -3,10 +3,10 @@ title: El voto en contra en Bolivia
 slug: el-voto-en-contra-en-bolivia
 date: 2025-08-21
 category: Opinión
-excerpt: "Que el voto en contra se haya convertido en el verdadero vencedor de
+excerpt: Que el voto en contra se haya convertido en el verdadero vencedor de
   estas elecciones 2025 – 2030 no debería sorprendernos. Ese voto dirigido
   contra el establishment político es una respuesta lógica al desgaste
-  acumulado. Lo inquietante, sin embargo, es lo que puede venir después. "
+  acumulado. Lo inquietante, sin embargo, es lo que puede venir después.
 readingTime: 5 min de lectura
 ---
 El pasado 17 de agosto, ¿quién ganó realmente las elecciones presidenciales 2025 – 2030? Está claro que ninguno de aquellos candidatos que se veían ya sentados en la silla presidencial, amparados por encuestas infladas desde los medios tradicionales y avaladas por la institucionalidad electoral. El verdadero ganador de esta primera vuelta fue, sin duda, el voto en contra. Ese mismo voto que ya había sido determinante en anteriores comicios, aunque esta vez se mostró de manera más contundente y desnuda.
