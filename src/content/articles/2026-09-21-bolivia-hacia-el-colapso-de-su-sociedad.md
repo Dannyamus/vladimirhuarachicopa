@@ -8,7 +8,7 @@ excerpt: "Diamond sostiene que las sociedades no colapsan únicamente por causas
   las crisis. Si Bolivia no logra reencauzar sus conflictos, proteger su medio
   ambiente, reconstruir la confianza interna y establecer un mínimo de acuerdos
   sociales, el colapso no será un estallido repentino, sino un proceso en
-  marcha: silencioso, pero devastador. "
+  marcha: silencioso, pero devastador."
 readingTime: 5 min de lectura
 ---
 A primera vista, este título puede parecer dramático, rimbombante o incluso alarmista. Sin embargo, este texto propone examinar cinco factores clave identificados por Jared Diamond en su libro Colapso, como señales recurrentes del derrumbe de civilizaciones, aplicándolos al contexto boliviano. Estos factores son: el daño ambiental, el cambio climático, la hostilidad entre ciudadanos, la pérdida del comercio y, finalmente, la forma en que una sociedad responde a estos desafíos.
