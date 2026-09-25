@@ -3,9 +3,9 @@ title: Bolivia y el desafío pendiente del Estado Plurinacional
 slug: bolivia-y-el-desafio-pendiente-del-estado-plurinacional
 date: 2025-05-16
 category: Opinión
-excerpt: "El desafío es construir una nueva correlación de fuerzas políticas,
+excerpt: El desafío es construir una nueva correlación de fuerzas políticas,
   capaz de articular las aspiraciones de las generaciones jóvenes con las luchas
-  históricas que dieron lugar al Estado Plurinacional. "
+  históricas que dieron lugar al Estado Plurinacional.
 readingTime: 5 min de lectura
 ---
 La ciencia política estudia al Estado y, en ciertos contextos, al poder. Al centrarse en el Estado, lo hace desde múltiples enfoques, entre ellos, su organización interna y su relación con la sociedad. Cuando se enfoca en el poder, examina cómo este se manifiesta en las relaciones políticas y públicas, afectando no solo a los gobiernos, sino a cualquier grupo social y, por extensión, a cada ciudadano. En este marco, Bolivia atraviesa una etapa políticamente caótica, cercana a una anomia social. Aunque en apariencia todo parece estar estructurado, el proceso interno del país avanza con extrema lentitud. Como consecuencia, los cambios, si bien existen, no son percibidos por la población.
